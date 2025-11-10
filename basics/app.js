@@ -8,12 +8,14 @@
 
 // React.createElement("tag" , {obj --> contain id's} , children)
 
+import React from "react"
+import ReactDOM from "react-dom/client";
+
 const parent = React.createElement("div" , {id:"parent"} , 
     React.createElement("div", {id:"child"} ,
         React.createElement("h1" , {} , "I am h1")
     )
 );
-
 
 const heading = React.createElement(
     "h1" ,
